@@ -310,6 +310,12 @@
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 28px;
   }
+  .plate.wide{
+    grid-column: 1 / -1;
+  }
+  .plate.wide .frame{
+    aspect-ratio: 21 / 6;
+  }
   .plate{
     border: 1px solid var(--rule);
     background: var(--bg-panel);
@@ -490,7 +496,6 @@
     <div class="wrap measure">
       <div class="section-head">
         <h2>Research</h2>
-        <span class="tag">updated 2026</span>
       </div>
 
       <div class="paper">
@@ -500,7 +505,6 @@
           <p>
             I cleaned up and validated data from WISE and Spitzer and measured background levels. I compared these FITS to JWST, masking out the galaxy and background stars to apply the correct background anchoring for the new JWST images. I specifically looked at NGC 628 and NGC 1566 observations from these three telescopes in the JWST F200W filter, WISE W1, and Spitzer's IRAC Channel 1.
           </p>
-          <p class="meta">prior projext</p>
           <p class="advisor">Advisor: <b>Adam Leroy</b></p>
         </div>
       </div>
@@ -512,7 +516,6 @@
           <p>
             I worked with my peers to query Gaia data of the IC4665 open cluster. We analyzed how different membership selection criteria from Gaia affects the interpretation of the cluster’s 3D structure using Gaussian fits to determine the likelihood of stars being members.
           </p>
-          <p class="meta">prior project</p>
           <p class="advisor">Advisor: <b>Donald Terndrup</b></p>
         </div>
       </div>
@@ -525,7 +528,6 @@
              I used data from hydrodynamical simulations of the intergalactic medium. This data contained skewers, or simulated sight lines, of quasars in the Lyman-alpha Forest region. I forward-modeled these to match DESI's resolution and analyzed it using likelihood ratios and kernel density estimates. I learned how to process spectroscopic data and found how many quasars would be needed to constrain data to helium reionization models with a 3-sigma significance level, which came to hundreds or thousands depending on the hydrodynamical model used.
              I also investigated another set of three hydrodynamical simulations of the IGM from PRIYA. I divided the box into skewers, calculating the temperature at mean density T_0 and the width of the distribution delta T. From here, I created a small ResNet and fed forward-modeled flux skewers in to investigate whether or not machine learning would be able to predict the temperature at mean density and width of the temperature distribution from DESI data.
           </p>
-          <p class="meta">in progress</p>
           <p class="advisor">Advisor: <b>Molly Wolfson</b></p>
         </div>
       </div>
@@ -537,7 +539,6 @@
           <p>
             I compared new VLA observations to old VLA data from The HI Nearby Galaxy Survey (THINGS), finding increased HI mass and sensitivity owing to more observation time. I also anchored a newly awarded strip in NGC 628 of JWST NIRCam and MIRI imaging to WISE W1 and W3. With this new data and prior, archival JWST, ALMA CO, GALEX FUV, and Spitzer data, I investigated how neutral gas, star formation, and polycyclic aromatic hydrocarbons behaved. With higher resolution and sensitivity in the outskirts of NGC 628, a relatively unexplored region, I found that star formation drops about 4.5-4.8 times faster than atomic gas does, and that PAHs are well-mixed and may act as a tracer of the dusty diffuse atomic gas. During this program, I sat into the CosmicAI Summer School, where I learned about machine learning’s applications in astronomy. I synthesized all I learned into an oral presentation and report.
           </p>
-          <p class="meta">in progress</p>
           <p class="advisor">Advisor: <b>Cosima Eibensteiner</b></p>
         </div>
       </div>
@@ -548,7 +549,6 @@
     <div class="wrap">
       <div class="section-head">
         <h2>Coursework</h2>
-        <span class="tag">Ohio State</span>
       </div>
       <div class="course-grid">
         <div class="course-group">
@@ -619,7 +619,7 @@
         <span class="tag">field notes</span>
       </div>
       <div class="plate-grid">
-        <div class="plate">
+        <div class="plate wide">
           <div class="frame"><span><img src="moon_three_nights.png" alt="Moon across 3 nights"></span></div>
           <div class="cap">
             <div class="obj">Moon</div>
@@ -627,7 +627,7 @@
           </div>
         </div>
         <div class="plate">
-          <div class="frame"><span><img src="saturn_sep_2020.PNG" alt="Saturn"></span></div>
+          <div class="frame"><span><img src="saturn_july_2020.PNG" alt="Saturn"></span></div>
           <div class="cap">
             <div class="obj">Saturn</div>
             <div class="exif">2020-07-28 · 10" Dobsonian · f/5 · ASI224MC · UV/IR Cut Filter</div>
@@ -648,7 +648,7 @@
           </div>
         </div>
         <div class="plate">
-          <div class="frame"><span><img src="jupiter_and_moons_2020.jpg" alt="Jupiter and Io, Europa, and Callisto"></span></div>
+          <div class="frame"><span><img src="jupiter_and_moons_2020.png" alt="Jupiter and Io, Europa, and Callisto"></span></div>
           <div class="cap">
             <div class="obj">Jupiter</div>
             <div class="exif">2020-08-19 · 10" Dobsonian · f/5 · ASI224MC · UV/IR Cut Filter</div>
@@ -676,13 +676,6 @@
           </div>
         </div>
         <div class="plate">
-          <div class="frame"><span><img src="Milky_Way_Trees.jpg" alt="Milky Way at Green Bank"></span></div>
-          <div class="cap">
-            <div class="obj">Milky Way</div>
-            <div class="exif">2022-07-01 · Nikon D3400 · NIKKOR 18-55mm · iOptron SkyGuider Pro</div>
-          </div>
-        </div>
-        <div class="plate">
           <div class="frame"><span><img src="m42.png" alt="Orion Nebula"></span></div>
           <div class="cap">
             <div class="obj">Orion Nebula (M42)</div>
@@ -701,6 +694,13 @@
           <div class="cap">
             <div class="obj">Pleiades (M45)</div>
             <div class="exif">2021-03-10 · Nikon D3400 · NIKKOR 70-300mm · iOptron SkyGuider Pro</div>
+          </div>
+        </div>
+        <div class="plate wide">
+          <div class="frame"><span><img src="Milky_Way_Trees.jpg" alt="Milky Way at Green Bank"></span></div>
+          <div class="cap">
+            <div class="obj">Milky Way</div>
+            <div class="exif">2022-07-01 · Nikon D3400 · NIKKOR 18-55mm · iOptron SkyGuider Pro</div>
           </div>
         </div>
       </div>
@@ -730,20 +730,20 @@
       </div>
       <div class="contact-block">
         <div class="contact-item">
-          <div class="k">email</div>
+          <div class="k">Email</div>
           <div class="v"><a class="underline-link" href="mailto:lam.474@osu.edu">lam.474@osu.edu</a></div>
         </div>
         <div class="contact-item">
-          <div class="k">github</div>
+          <div class="k">GitHub</div>
           <!-- EDIT -->
           <div class="v"><a class="underline-link" href="https://github.com/brandonlam2462" target="_blank" rel="noopener">github.com/brandonlam2462</a></div>
         </div>
         <div class="contact-item">
-          <div class="k">orcid</div>
+          <div class="k">ORCID</div>
           <div class="v"><a class="underline-link" href="https://orcid.org/0009-0000-1346-6297" target="_blank" rel="noopener">0009-0000-1346-6297</a></div>
         </div>
         <div class="contact-item">
-          <div class="k">linkedin</div>
+          <div class="k">LinkedIn</div>
           <div class="v"><a class="underline-link" href="https://linkedin.com/in/blam92" target="_blank" rel="noopener">linkedin.com/in/blam92</a></div>
         </div>
       </div>
@@ -755,6 +755,7 @@
 <footer>
   <div class="wrap">
     <span>Brandon Lam</span>
+    <span>Updated 2026-09-05</span>
     <span>built with plain HTML/CSS, hosted on GitHub Pages</span>
   </div>
 </footer>

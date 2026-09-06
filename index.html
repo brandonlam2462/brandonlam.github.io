@@ -316,6 +316,12 @@
   .plate.wide .frame{
     aspect-ratio: 21 / 6;
   }
+  .plate.span2{
+    grid-column: span 2;
+  }
+  .plate.span2 .frame{
+    aspect-ratio: 2 / 1;
+  }
   .plate{
     border: 1px solid var(--rule);
     background: var(--bg-panel);
@@ -696,7 +702,7 @@
             <div class="exif">2021-03-10 · Nikon D3400 · NIKKOR 70-300mm · iOptron SkyGuider Pro</div>
           </div>
         </div>
-        <div class="plate wide">
+        <div class="plate span2">
           <div class="frame"><span><img src="Milky_Way_Trees.jpg" alt="Milky Way at Green Bank"></span></div>
           <div class="cap">
             <div class="obj">Milky Way</div>
